@@ -22,12 +22,21 @@
     --purple: #a29bfe;
 }
 
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    /* Smooth scroll for iOS */
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-main);
     font-family: 'Outfit', sans-serif;
-    overflow-x: hidden;
-    position: relative;
     scroll-behavior: smooth;
 }
 
@@ -139,10 +148,15 @@ body {
 }
 
 .glass-navbar {
-    background: rgba(15, 15, 27, 0.8);
+    background: rgba(15, 15, 27, 0.9) !important;
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--card-border);
     transition: all 0.3s ease;
+    z-index: 10000 !important;
+    /* Ensure it stays on top */
+    width: 100% !important;
+    top: 0 !important;
 }
 
 .glass-card,
@@ -405,20 +419,16 @@ body {
 /* Scroll Animations */
 .reveal-up {
     opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transform: translateY(30px);
+    transition: all 0.5s ease-out;
 }
 
-.reveal-left {
-    opacity: 0;
-    transform: translateX(-40px);
-    transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
+.reveal-left,
 .reveal-right {
     opacity: 0;
-    transform: translateX(40px);
-    transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transform: translateY(20px);
+    /* Changed from translate X to Y on mobile/all to prevent overflow */
+    transition: all 0.5s ease-out;
 }
 
 .reveal-up.active,
@@ -428,18 +438,34 @@ body {
     transform: translate(0);
 }
 
-/* Custom Toggler */
+/* Custom Toggler - Fixed visibility issues */
 .custom-toggler {
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    background: rgba(255, 255, 255, 0.05) !important;
-    padding: 4px 8px !important;
-    border-radius: 8px !important;
-    box-shadow: none !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    padding: 6px 10px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+    position: relative;
+    z-index: 9999 !important;
+    /* On top of everything */
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.custom-toggler .bi-list {
+    color: #ffffff !important;
+    font-size: 1.8rem;
+    /* Slightly larger for easier tapping */
+    display: block;
 }
 
 .custom-toggler:active,
 .custom-toggler:focus {
-    background: rgba(255, 255, 255, 0.1) !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-color: var(--primary) !important;
 }
 
 /* Responsive adjustments */
@@ -587,7 +613,25 @@ body {
         padding: 0.75rem 2rem !important;
     }
 
-    /* Navbar */
+    /* Navbar adjustments to prevent toggler cutoff */
+    .navbar .container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .navbar-brand {
+        font-size: 1.1rem !important;
+        max-width: 60%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .custom-toggler {
+        margin-right: -5px;
+        /* Slight adjustment to pull it back from the edge */
+    }
+
     .navbar-collapse {
         background: rgba(15, 15, 27, 0.97);
         backdrop-filter: blur(20px);
@@ -620,6 +664,21 @@ body {
 
     .hero-content .badge {
         font-size: 0.75rem;
+    }
+
+    .navbar .container {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+
+    .navbar-brand {
+        font-size: 0.95rem !important;
+        max-width: 55%;
+    }
+
+    .custom-toggler {
+        min-width: 38px;
+        min-height: 38px;
     }
 
     .phone-mockup {
