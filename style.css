@@ -157,6 +157,9 @@ body {
     /* Ensure it stays on top */
     width: 100% !important;
     top: 0 !important;
+    padding-top: 15px !important;
+    /* Increased size */
+    padding-bottom: 15px !important;
 }
 
 .glass-card,
@@ -613,10 +616,11 @@ body {
         padding: 0.75rem 2rem !important;
     }
 
-    /* Navbar adjustments to prevent toggler cutoff */
+    /* Navbar adjustments for better spacing */
     .navbar .container {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
+        padding-left: 25px !important;
+        /* Increased space from corners */
+        padding-right: 25px !important;
     }
 
     .navbar-brand {
@@ -628,8 +632,7 @@ body {
     }
 
     .custom-toggler {
-        margin-right: -5px;
-        /* Slight adjustment to pull it back from the edge */
+        margin-right: 0;
     }
 
     .navbar-collapse {
@@ -667,8 +670,9 @@ body {
     }
 
     .navbar .container {
-        padding-left: 8px !important;
-        padding-right: 8px !important;
+        padding-left: 20px !important;
+        /* Spacing for very small phones */
+        padding-right: 20px !important;
     }
 
     .navbar-brand {
