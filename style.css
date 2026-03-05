@@ -430,8 +430,16 @@ body {
 
 /* Custom Toggler */
 .custom-toggler {
-    border: none !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    padding: 4px 8px !important;
+    border-radius: 8px !important;
     box-shadow: none !important;
+}
+
+.custom-toggler:active,
+.custom-toggler:focus {
+    background: rgba(255, 255, 255, 0.1) !important;
 }
 
 /* Responsive adjustments */
@@ -518,7 +526,13 @@ body {
     .phone-mockup {
         width: 240px;
         height: 520px;
-        border-radius: 44px;
+        border-radius: 42px;
+        padding: 8px;
+        /* Balanced realistic border */
+        box-shadow:
+            0 0 0 2px #333,
+            0 20px 40px rgba(0, 0, 0, 0.4);
+        background: #000;
     }
 
     .phone-mockup::before {
@@ -535,6 +549,11 @@ body {
     .ios-status-bar .time,
     .ios-status-bar .status-icons {
         font-size: 0.7rem;
+    }
+
+    .mockup-img {
+        top: 28px !important;
+        height: calc(100% - 28px) !important;
     }
 
     .phone-screen {
@@ -606,15 +625,21 @@ body {
     .phone-mockup {
         width: 210px;
         height: 455px;
-        border-radius: 40px;
+        border-radius: 35px;
+        padding: 6px;
+        /* Balanced border */
+        box-shadow:
+            0 0 0 1.5px #333,
+            0 15px 30px rgba(0, 0, 0, 0.4);
+        background: #000;
     }
 
     .phone-screen {
-        border-radius: 30px;
+        border-radius: 32px;
     }
 
     .slideshow-container {
-        border-radius: 30px;
+        border-radius: 32px;
     }
 
     .phone-mockup::before {
@@ -625,6 +650,11 @@ body {
 
     .ios-status-bar {
         height: 28px;
+    }
+
+    .mockup-img {
+        top: 28px !important;
+        height: calc(100% - 28px) !important;
     }
 
     /* Buttons stacked on very small screens */
