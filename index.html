@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xpanse - Premium Expense Tracker</title>
+    <meta name="description"
+        content="Download Xpanse - The ultimate secure, dark-themed, glassmorphic expense tracker app.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Ambient Background Effects -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white d-flex align-items-center gap-2" href="#">
+                <div class="brand-icon">
+                    <i class="bi bi-wallet2"></i>
+                </div>
+                Xpanse
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <i class="bi bi-list text-white fs-3"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50 hover-white" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50 hover-white" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50 hover-white" href="#download">Download</a>
+                    </li>
+                </ul>
+                <a href="#download" class="btn btn-primary btn-glow rounded-pill px-4 fw-semibold">Get App</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center">
+        <div class="container pt-5 mt-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 hero-content reveal-left">
+                    <span class="badge glass-badge mb-3 px-3 py-2 text-primary-accent"><i
+                            class="bi bi-star-fill text-warning me-2"></i> Premium Tracking</span>
+                    <h1 class="display-4 fw-bolder text-white mb-4 line-height-tight">
+                        Take Control of Your <span class="text-gradient">Financial Future</span>
+                    </h1>
+                    <p class="lead text-white-50 mb-5 pe-lg-5">
+                        Xpanse helps you track expenses, analyze spending habits, and build wealth with a beautifully
+                        crafted, highly secure platform.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="Xpanse Apk file/Xpanse.apk" download="Xpanse.apk"
+                            class="btn btn-primary btn-glow btn-lg rounded-pill px-5 d-flex align-items-center gap-2">
+                            <i class="bi bi-download"></i> Download APK
+                        </a>
+                        <a href="#features"
+                            class="btn btn-glass btn-lg rounded-pill px-5 d-flex align-items-center gap-2 text-white">
+                            Explore <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="mt-5 d-flex align-items-center gap-4 text-white-50 small">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="bi bi-shield-check fs-5 text-success"></i> 100% Secure
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="bi bi-phone fs-5 text-info"></i> Android
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="bi bi-star-fill fs-5 text-warning"></i> Free
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 hero-mockup reveal-right">
+                    <!-- CSS Mockup Phone -->
+                    <div class="phone-mockup mx-auto">
+                        <div class="phone-screen glass-card d-flex flex-column">
+                            <!-- iOS Status Bar - 3 column layout: Time | [Island Gap] | Icons -->
+                            <div class="ios-status-bar position-absolute w-100 top-0 start-0 z-3">
+                                <span class="sb-time fw-semibold text-white">9:41</span>
+                                <span class="sb-island-gap"></span>
+                                <div class="sb-icons d-flex align-items-center gap-1 text-white">
+                                    <i class="bi bi-reception-4"></i>
+                                    <i class="bi bi-wifi"></i>
+                                    <i class="bi bi-battery-full"></i>
+                                </div>
+                            </div>
+                            <!-- Slideshow Container -->
+                            <div class="slideshow-container w-100 h-100 position-relative">
+                                <img src="Xpanse.photos/1page.jpeg" alt="Dashboard"
+                                    class="mockup-img active w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                                <img src="Xpanse.photos/2page.jpeg" alt="Analytics"
+                                    class="mockup-img w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                                <img src="Xpanse.photos/3page.jpeg" alt="Transactions"
+                                    class="mockup-img w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                                <img src="Xpanse.photos/4page.jpeg" alt="Settings"
+                                    class="mockup-img w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5 reveal-up">
+                <h2 class="display-6 fw-bold text-white mb-3">Why Choose <span
+                        class="text-primary-accent">Xpanse</span>?</h2>
+                <p class="text-white-50 mx-auto" style="max-width: 600px;">Experience a new standard in personal finance
+                    tracking with powerful tools wrapped in a stunning interface.</p>
+            </div>
+
+            <div class="row g-4 pt-3">
+                <!-- Feature 1 -->
+                <div class="col-md-6 col-lg-4 reveal-up" style="transition-delay: 100ms;">
+                    <div class="glass-card feature-card h-100 p-4 rounded-4">
+                        <div class="feature-icon mb-4 text-primary-accent">
+                            <i class="bi bi-wallet2"></i>
+                        </div>
+                        <h4 class="text-white mb-3">Multiple Wallets</h4>
+                        <p class="text-white-50 mb-0">Seamlessly manage your balances across Bank, Cash, and Mobile
+                            Wallets all in one place.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="col-md-6 col-lg-4 reveal-up" style="transition-delay: 200ms;">
+                    <div class="glass-card feature-card h-100 p-4 rounded-4">
+                        <div class="feature-icon mb-4 text-info">
+                            <i class="bi bi-pie-chart-fill"></i>
+                        </div>
+                        <h4 class="text-white mb-3">Interactive Charts</h4>
+                        <p class="text-white-50 mb-0">Visualize your cash flow with detailed income and expense graphs
+                            for better financial understanding.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="col-md-6 col-lg-4 reveal-up" style="transition-delay: 300ms;">
+                    <div class="glass-card feature-card h-100 p-4 rounded-4">
+                        <div class="feature-icon mb-4 text-warning">
+                            <i class="bi bi-bullseye"></i>
+                        </div>
+                        <h4 class="text-white mb-3">Budget Planning</h4>
+                        <p class="text-white-50 mb-0">Set monthly budgets for different categories and track your
+                            progress to avoid overspending.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="col-md-6 col-lg-4 reveal-up" style="transition-delay: 400ms;">
+                    <div class="glass-card feature-card h-100 p-4 rounded-4">
+                        <div class="feature-icon mb-4 text-success">
+                            <i class="bi bi-plus-circle-dotted"></i>
+                        </div>
+                        <h4 class="text-white mb-3">Quick Transactions</h4>
+                        <p class="text-white-50 mb-0">Add an income or expense anywhere, anytime. Fast and intuitive
+                            entry forms save you time.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="col-md-6 col-lg-4 reveal-up" style="transition-delay: 500ms;">
+                    <div class="glass-card feature-card h-100 p-4 rounded-4">
+                        <div class="feature-icon mb-4 text-danger">
+                            <i class="bi bi-card-list"></i>
+                        </div>
+                        <h4 class="text-white mb-3">Detailed History</h4>
+                        <p class="text-white-50 mb-0">Keep a complete, searchable record of all your past transactions
+                            for accurate tracking and audits.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="col-md-6 col-lg-4 reveal-up" style="transition-delay: 600ms;">
+                    <div class="glass-card feature-card h-100 p-4 rounded-4">
+                        <div class="feature-icon mb-4 text-purple">
+                            <i class="bi bi-stars"></i>
+                        </div>
+                        <h4 class="text-white mb-3">Premium Dark Theme</h4>
+                        <p class="text-white-50 mb-0">Enjoy an elegant, eye-friendly dark mode with stunning
+                            glassmorphism design elements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-5 my-5">
+        <div class="container py-5 text-center reveal-up">
+            <div class="glass-card p-5 rounded-5 position-relative overflow-hidden download-card">
+                <div class="glow-bg position-absolute"></div>
+                <div class="position-relative z-1 pt-4 pb-4">
+                    <h2 class="display-5 fw-bold text-white mb-4">Ready to Master Your Money?</h2>
+                    <p class="text-white-50 lead mx-auto mb-5" style="max-width: 600px;">
+                        Join thousands of users managing their wealthy safely and beautifully. Download the latest
+                        Android APK directly.
+                    </p>
+                    <!-- Download Link (Place your Xpanse.apk in the same folder) -->
+                    <a href="Xpanse Apk file/Xpanse.apk"
+                        class="btn btn-primary btn-glow btn-lg rounded-pill px-5 py-3 fs-5 fw-semibold d-inline-flex align-items-center gap-3"
+                        download="Xpanse.apk">
+                        <i class="bi bi-android2 fs-4"></i> Download Xpanse APK
+                    </a>
+                    <p class="text-white-50 small mt-4 mb-0">Requires Android 8.0 or later • Version 1.0.0</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 border-top border-white-10">
+        <div class="container text-center">
+            <div class="d-flex align-items-center justify-content-center gap-2 mb-3">
+                <div class="brand-icon small">
+                    <i class="bi bi-wallet2"></i>
+                </div>
+                <h4 class="text-white fw-bold mb-0">Xpanse</h4>
+            </div>
+            <p class="text-white-50 mb-3 small">&copy;
+                <script>document.write(new Date().getFullYear())</script> Xpanse App. All rights reserved.
+            </p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#" class="text-white-50 hover-white text-decoration-none small">Privacy Policy</a>
+                <span class="text-white-50 small">•</span>
+                <a href="#" class="text-white-50 hover-white text-decoration-none small">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
