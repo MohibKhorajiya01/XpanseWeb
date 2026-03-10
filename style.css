@@ -451,7 +451,7 @@ body {
     position: relative;
     z-index: 9999 !important;
     /* On top of everything */
-    display: flex !important;
+    display: none !important; /* Hidden by default on desktop */
     align-items: center;
     justify-content: center;
     min-width: 44px;
@@ -632,6 +632,7 @@ body {
     }
 
     .custom-toggler {
+        display: flex !important; /* Show only on mobile/tablet */
         margin-right: 0;
     }
 
