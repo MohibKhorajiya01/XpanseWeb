@@ -628,6 +628,17 @@ body {
         padding: 1.5rem !important;
     }
 
+    /* Reduce vertical padding for sections on mobile */
+    #about, #features, #download {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    #about .container, #features .container {
+        padding-top: 0 !important;
+        padding-bottom: 1rem !important;
+    }
+
     .feature-icon {
         font-size: 2rem;
     }
