@@ -209,6 +209,36 @@ body {
     font-size: 2.5rem;
 }
 
+/* Glass Dropdown */
+.glass-dropdown {
+    background: rgba(15, 15, 27, 0.95) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--card-border) !important;
+    border-radius: 12px !important;
+    padding: 10px !important;
+    margin-top: 15px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+}
+
+.glass-dropdown .dropdown-item {
+    color: var(--text-muted) !important;
+    border-radius: 8px;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+
+.glass-dropdown .dropdown-item:hover {
+    background: rgba(108, 92, 231, 0.1) !important;
+    color: white !important;
+}
+
+.dropdown-toggle::after {
+    vertical-align: middle !important;
+    margin-left: 0.4em !important;
+    opacity: 0.6;
+}
+
 /* Icons */
 .icon-box {
     width: 48px;

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Xpanse</title>
+    <meta name="description" content="Privacy Policy for Xpanse - Learn how we protect your financial data and privacy.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .policy-container {
+            padding-top: 120px;
+            padding-bottom: 80px;
+        }
+        .policy-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 3rem;
+        }
+        .policy-section {
+            margin-bottom: 2.5rem;
+        }
+        .policy-section h2 {
+            color: var(--primary-accent);
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .policy-section h2 i {
+            font-size: 1.5rem;
+        }
+        .policy-section p, .policy-section li {
+            color: var(--text-muted);
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+        .policy-section ul {
+            padding-left: 1.25rem;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-accent);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .back-link:hover {
+            color: white;
+            transform: translateX(-5px);
+        }
+        @media (max-width: 768px) {
+            .policy-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Ambient Background Effects -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white d-flex align-items-center gap-2" href="index.html">
+                <div class="brand-icon">
+                    <i class="bi bi-wallet2"></i>
+                </div>
+                Xpanse
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <i class="bi bi-list text-white fs-3"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50 hover-white" href="index.html#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50 hover-white" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50 hover-white active" href="privacy.html">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50 hover-white" href="terms.html">Terms</a>
+                    </li>
+                </ul>
+                <a href="index.html#download" class="btn btn-primary btn-glow rounded-pill px-4 fw-semibold">Get App</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container policy-container reveal-up">
+        <div class="policy-card">
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bold text-white mb-2">Privacy Policy</h1>
+                <p class="text-white-50">Effective Date: March 10, 2026</p>
+                <div class="border-bottom border-white-10 mx-auto w-25 mt-4"></div>
+            </div>
+
+            <div class="policy-section">
+                <p>Welcome to <strong>Xpanse</strong>. Your privacy is our top priority. We are committed to protecting your personal information and being transparent about how we handle your data. This Privacy Policy describes how we collect, use, and safeguard your information within the Xpanse mobile application.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2><i class="bi bi-database-fill"></i> 1. Information We Collect</h2>
+                <p>We only collect data that is strictly necessary for the core functionality of the application:</p>
+                <ul>
+                    <li><strong>Account Information:</strong> When you sign in via Google, we store your <strong>Email Address</strong> and <strong>Display Name</strong>. This allows us to securely link your data to your identity, ensuring your financial records are safe and accessible only to you.</li>
+                    <li><strong>Financial Records:</strong> Any transactions, wallet balances, and budgets that you manually input are stored in our database. This information is used solely to provide you with financial insights and tracking capabilities.</li>
+                    <li><strong>Device Metadata:</strong> We may analyze basic device information (such as model and software version) to optimize performance and fix technical issues.</li>
+                </ul>
+            </div>
+
+            <div class="policy-section">
+                <h2><i class="bi bi-cloud-check-fill"></i> 2. Data Storage & Security</h2>
+                <ul>
+                    <li><strong>Offline Access:</strong> For your convenience, your data is stored locally on your device using a secure <strong>Hive Database</strong>. This enables you to manage your finances even without an internet connection.</li>
+                    <li><strong>Cloud Synchronization:</strong> We utilize <strong>Google Firebase</strong> for secure cloud backups. This process ensures that your data is synced across devices and can be restored if you lose your phone or switch to a new one.</li>
+                </ul>
+            </div>
+
+            <div class="policy-section">
+                <h2><i class="bi bi-shield-lock-fill"></i> 3. Third-Party Integrations</h2>
+                <p>To ensure a high-performance and secure experience, we use trusted infrastructure from Google:</p>
+                <ul>
+                    <li><strong>Firebase Authentication:</strong> For managing secure user logins.</li>
+                    <li><strong>Cloud Firestore:</strong> To store and sync your financial data securely in the cloud.</li>
+                    <li><strong>Google Sign-In:</strong> To provide a fast, one-tap authentication method without needing separate passwords.</li>
+                </ul>
+            </div>
+
+            <div class="policy-section">
+                <h2><i class="bi bi-lock-fill"></i> 4. Privacy Guarantees</h2>
+                <ul>
+                    <li><strong>No Data Selling:</strong> We <strong>never</strong> sell, trade, or rent your personal or financial information to third parties.</li>
+                    <li><strong>No Intrusive Ads:</strong> Xpanse is an ad-free experience. We do not use trackers that monitor your browsing behavior or collect data for advertising purposes.</li>
+                    <li><strong>End-to-End Security:</strong> All communications between the app and our servers are protected using industry-standard encryption protocols (SSL/TLS).</li>
+                </ul>
+            </div>
+
+            <div class="policy-section">
+                <h2><i class="bi bi-person-check-fill"></i> 5. User Autonomy & Control</h2>
+                <p>You have full ownership of your data at all times:</p>
+                <ul>
+                    <li><strong>Modify/Delete:</strong> You can edit or delete any transaction entry within the app at any time.</li>
+                    <li><strong>Reset Data:</strong> You have the option to clear all local data through the application settings.</li>
+                    <li><strong>Account Deletion:</strong> You can choose to delete your Xpanse account permanently. This action will immediately and irrevocably erase all your data from both your local device and our cloud servers.</li>
+                </ul>
+            </div>
+
+            <div class="policy-section">
+                <h2><i class="bi bi-person-fill-lock"></i> 6. Children's Privacy</h2>
+                <p>Xpanse is designed for use by individuals aged 13 and older. We do not knowingly collect personal information from children under the age of 13. If we become aware that a child has provided us with personal data, we will take immediate steps to delete it.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2><i class="bi bi-envelope-at-fill"></i> 7. Contact Information</h2>
+                <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy, please feel free to reach out to our team:</p>
+                <div class="glass-card p-4 rounded-4 mt-3">
+                    <p class="mb-1 text-white"><strong>Developer:</strong> Mohib Khorajiya</p>
+                    <p class="mb-0 text-white"><strong>Email:</strong> <a href="mailto:khorajiyamohib01@gmail.com" class="text-primary-accent text-decoration-none">khorajiyamohib01@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 border-top border-white-10">
+        <div class="container text-center">
+            <p class="text-white-50 mb-0 small">&copy; 2026 Xpanse App. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
