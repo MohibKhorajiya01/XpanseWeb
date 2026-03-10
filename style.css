@@ -634,8 +634,19 @@ body {
         padding-bottom: 2rem !important;
     }
 
-    #about .container, #features .container {
+    #features .container {
         padding-top: 0 !important;
+        padding-bottom: 1rem !important;
+    }
+
+    #about .container {
+        padding-top: 0 !important;
+        padding-bottom: 0.5rem !important;
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+
+    #about {
         padding-bottom: 1rem !important;
     }
 
@@ -711,7 +722,7 @@ body {
         font-size: 0.75rem;
     }
 
-    .navbar .container {
+    .navbar .container, #about .container {
         padding-left: 20px !important;
         /* Spacing for very small phones */
         padding-right: 20px !important;
